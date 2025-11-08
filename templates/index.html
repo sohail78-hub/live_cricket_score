@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistan Cricket Live</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="flag-container">
+            <img src="https://flagsapi.com/PK/flat/64.png" alt="Pakistan Flag" class="flag-img" />
+        
+</div>
+
+        <h1>Pakistan Cricket Live</h1>
+        <p id="update-time">Last updated: {{ last_updated }}</p>
+    </header>
+
+    <main class="container">
+
+        <!-- Live Matches -->
+        <section class="section live-matches">
+            <h2><i class="fas fa-cricket-bat-ball"></i> Live Matches</h2>
+            {% if live_scores %}
+                <div class="match-row">
+                    {% for match in live_scores %}
+                        <div class="match-card">
+                            <div class="match-content">
+                                <h3>{{ match.title }}</h3>
+                                <p>{{ match.description }}</p>
+                                <a href="{{ match.link }}" target="_blank" class="btn">Follow Match →</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p class="no-data">No live matches at the moment.</p>
+            {% endif %}
+        </section>
+
+        <!-- News Section -->
+        <section class="section news-section">
+            <h2><i class="fas fa-newspaper"></i> Pakistan Cricket News</h2>
+            {% if pakistan_news %}
+                <div class="news-grid">
+                    {% for article in pakistan_news %}
+                        <article class="news-card-pro">
+                            <img src="{{ article.image }}" alt="News image" class="news-image" onerror="this.src='/static/default-news.png';">
+                            <div class="news-body">
+                                <h3>{{ article.title }}</h3>
+                                <p class="news-desc">{{ article.description }}</p>
+                                {% if article.pub_date %}
+                                    <small class="news-date">{{ article.pub_date }}</small>
+                                {% endif %}
+                                <a href="{{ article.link }}" target="_blank" class="btn btn-small">Read Full Story</a>
+                            </div>
+                        </article>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p class="no-data">No recent news updates.</p>
+            {% endif %}
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Data from <a href="https://www.espncricinfo.com" target="_blank">ESPNcricinfo</a></p>
+    </footer>
+
+    <!-- Auto-refresh every 3 minutes -->
+    <script>
+        setTimeout(() => {
+            location.reload();
+        }, 180000);
+    </script>
+
+</body>
+</html>
