@@ -16,6 +16,16 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
 ✅ **Reliable Flag Display & Fallback Images**  
 ✅ **Easy Setup – Just Run One Command**
 
+# 🚀 How to Create by ** GEMINI CLI **
+
+## Put this Prompt in Gemini CLI:
+" Create a responsive Flask web application in Python that displays live international cricket scores and Pakistan-specific news. Use the ESPNcricinfo RSS feeds for live scores (https://static.cricinfo.com/rss/livescores.xml) and Pakistan news (https://www.espncricinfo.com/rss/content/story/feeds/7.xml). Filter matches to show only international games by excluding domestic teams (e.g., county sides, Police Sports Club), while prioritizing Pakistan-related content using keywords like 'Pakistan', 'PAK', 'PSL', and major player names. Parse both feeds to extract match titles, descriptions, links, and images—using <coverImages> or <media:content> for news thumbnails—and include fallbacks for missing data.
+
+Design a clean, professional UI with a header featuring the Pakistan flag, a horizontal scrollable row for live matches, and a responsive grid for news articles with images, headlines, and timestamps. Show the last updated time and auto-refresh every 3 minutes. Structure the project with app.py, templates/index.html, and static assets (styles.css, pakistan-flag.png, default-news.png), and provide clear setup instructions for running the app locally. Ensure the dashboard is visually appealing, mobile-friendly, and focused on delivering real-time, relevant cricket updates for Pakistani fans."
+
+
+#### Gemini will create following files as per following structure 
+
 ## 📁 Project Structure
 
 ```Pakistan-cricket-live/
@@ -44,7 +54,7 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
 
 # 🚀 How to Run (Step-by-Step)
 
-You can create and run this project **from scratch using CLI or AI prompts like Gemini**.
+You can also create by your self and run this by following steps.
 
 ## Step 1: Create Project Folder
 
@@ -375,6 +385,7 @@ This app uses publicly available RSS feeds from ESPNcricinfo:
 https://static.cricinfo.com/rss/livescores.xml
 
 https://www.espncricinfo.com/rss/content/story/feeds/7.xml
+
 Data is fetched in real time. No scraping or authentication required.
 
 👉 Do not use for commercial purposes without permission.
@@ -385,7 +396,7 @@ If you found this project helpful, please give it a ⭐ on GitHub!
 ## 📬 Feedback / Issues?
 Have ideas or found bugs? Open an issue or contact me!
 
-# 🏏 Powered by Python, Flask, and passion for Pakistan cricket!
+## 🏏 Powered by Python, Flask, and passion for Pakistan cricket!
 
 
 To download this as a file, you can copy the entire content above and save it as `README.md` on your computer. The file contains all the necessary information about your project, including setup instructions, file structure, and usage guidelines.
