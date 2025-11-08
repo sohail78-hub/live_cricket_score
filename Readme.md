@@ -55,14 +55,18 @@ cd pakistan-cricket-live
 
 ### Step 2: Create Required Directories
 
-```mkdir templates
-mkdir static```
+```
+mkdir templates
+mkdir static
+```
 
 ### Step 3: Create app.py
 
 Use your terminal editor (nano, vim) or paste directly:
 
 # app.py - Pakistan Cricket Live Dashboard
+
+```
 import requests
 import xml.etree.ElementTree as ET
 from flask import Flask, render_template
@@ -181,10 +185,13 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
 
+```
+
 ## Step 4: Create templates/index.html
 Create file: templates/index.html
 
 Paste this code:
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -258,10 +265,12 @@ Paste this code:
     </script>
 </body>
 </html>
+```
 
 ## Step 5: Create static/styles.css
 Create file: static/styles.css
 
+```
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -339,24 +348,30 @@ footer {
     .header h1 { font-size: 1.6rem; }
     .match-card { min-width: 280px; flex: 0 0 280px; }
 }
+```
 
 ## Step 7: Install Dependencies
 
+```
 pip install flask requests
+```
 
 ## Step 8: Run the App
+
+```
 python app.py
+```
 
 Open: http://localhost:5000
 
-🧠 Tips for Using with AI Prompts (Gemini, ChatGPT, etc.)
+## 🧠 Tips for Using with AI Prompts (Gemini, ChatGPT, etc.)
 You can generate this entire project by giving an AI prompt like:
 
 "Create a Flask app that shows live cricket scores and Pakistan cricket news from ESPNcricinfo RSS feeds. Show only international matches. Make it responsive with a Pakistan flag in the header, horizontal match row, and news cards with images." 
 
 Then copy-paste each file and run step-by-step.
 
-🛡️ Disclaimer
+## 🛡️ Disclaimer
 This app uses publicly available RSS feeds from ESPNcricinfo:
 
 https://static.cricinfo.com/rss/livescores.xml
@@ -365,13 +380,13 @@ Data is fetched in real time. No scraping or authentication required.
 
 👉 Do not use for commercial purposes without permission.
 
-🌟 Star If You Like It!
+### 🌟 Star If You Like It!
 If you found this project helpful, please give it a ⭐ on GitHub!
 
-📬 Feedback / Issues?
+### 📬 Feedback / Issues?
 Have ideas or found bugs? Open an issue or contact me!
 
-🏏 Powered by Python, Flask, and passion for Pakistan cricket!
+### 🏏 Powered by Python, Flask, and passion for Pakistan cricket!
 
 
 To download this as a file, you can copy the entire content above and save it as `README.md` on your computer. The file contains all the necessary information about your project, including setup instructions, file structure, and usage guidelines.
