@@ -25,7 +25,7 @@ Create a responsive Flask web application in Python that displays live internati
 Design a clean, professional UI with a header featuring the Pakistan flag, a horizontal scrollable row for live matches and a responsive grid for news articles with images, headlines and timestamps. Show the last updated time and auto-refresh every 3 minutes. Structure the project with app.py, templates/index.html, and static assets (styles.css, pakistan-flag.png, default-news.png), and provide clear setup instructions for running the app locally. Ensure the dashboard is visually appealing, mobile-friendly and focused on delivering real-time, relevant cricket updates for Pakistani fans.
 
 
-#### Gemini will create following files as per following structure 
+## <span style="color:orange"> Gemini will create following files as per following structure </span>
 
 ## 📁 Project Structure
 
