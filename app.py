@@ -1,4 +1,4 @@
-# app.py - Pakistan Cricket Live Dashboard (Updated)
+# app.py - Cricket Live Score Dashboard (Updated)
 
 import requests
 import xml.etree.ElementTree as ET

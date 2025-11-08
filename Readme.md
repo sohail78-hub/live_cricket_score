@@ -1,4 +1,4 @@
- # 🏏 Pakistan Cricket Live Score Dashboard
+ # 🏏 Cricket Live Score Dashboard
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.0%2B-green)
@@ -75,7 +75,7 @@ mkdir static
 
 Use your terminal editor (nano, vim) or paste directly:
 
-### app.py - Pakistan Cricket Live Dashboard
+### app.py - Cricket Live Score Dashboard
 
 ```
 import requests
@@ -207,7 +207,7 @@ Paste this code:
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pakistan Cricket Live</title>
+    <title>Cricket Live Score Dashboard</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 </head>
@@ -216,7 +216,7 @@ Paste this code:
         <div class="flag-container">
             <img src="{{ url_for('static', filename='pakistan-flag.png') }}" alt="Pakistan Flag" class="flag-img" />
         </div>
-        <h1>Pakistan Cricket Live</h1>
+        <h1>Cricket Live Score Dashboard</h1>
         <p id="update-time">Last updated: {{ last_updated }}</p>
     </header>
 
