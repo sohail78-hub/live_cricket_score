@@ -60,7 +60,7 @@ mkdir templates
 mkdir static
 ```
 
-### Step 3: Create app.py
+## Step 3: Create file app.py
 
 Use your terminal editor (nano, vim) or paste directly:
 
@@ -188,7 +188,6 @@ if __name__ == '__main__':
 ```
 
 ## Step 4: Create templates/index.html
-Create file: templates/index.html
 
 Paste this code:
 ```
@@ -268,7 +267,6 @@ Paste this code:
 ```
 
 ## Step 5: Create static/styles.css
-Create file: static/styles.css
 
 ```
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -380,13 +378,13 @@ Data is fetched in real time. No scraping or authentication required.
 
 👉 Do not use for commercial purposes without permission.
 
-### 🌟 Star If You Like It!
+## 🌟 Star If You Like It!
 If you found this project helpful, please give it a ⭐ on GitHub!
 
-### 📬 Feedback / Issues?
+## 📬 Feedback / Issues?
 Have ideas or found bugs? Open an issue or contact me!
 
-### 🏏 Powered by Python, Flask, and passion for Pakistan cricket!
+# 🏏 Powered by Python, Flask, and passion for Pakistan cricket!
 
 
 To download this as a file, you can copy the entire content above and save it as `README.md` on your computer. The file contains all the necessary information about your project, including setup instructions, file structure, and usage guidelines.
