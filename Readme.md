@@ -1,4 +1,4 @@
- # 🏏 Pakistan Cricket Live Dashboard
+ # 🏏 Pakistan Cricket Live Score Dashboard
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.0%2B-green)
@@ -16,7 +16,7 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
 ✅ **Reliable Flag Display & Fallback Images**  
 ✅ **Easy Setup – Just Run One Command**
 
-### 📁 Project Structure
+## 📁 Project Structure
 
 ```Pakistan-cricket-live/
 │
@@ -32,7 +32,7 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
     └── pakistan-flag.png   ← Local flag image (to avoid external dependencies)
 ```
 
-### ✅ Key Files Explained
+## ✅ Key Files Explained
 
 | File | Purpose |
 |------|--------|
@@ -42,18 +42,18 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
 | `static/default-news.png` | Shown when a news article has no image |
 | `static/pakistan-flag.png` | High-quality Pakistan flag used in header |
 
-## 🚀 How to Run (Step-by-Step)
+# 🚀 How to Run (Step-by-Step)
 
 You can create and run this project **from scratch using CLI or AI prompts like Gemini**.
 
-### Step 1: Create Project Folder
+## Step 1: Create Project Folder
 
 ```
 mkdir pakistan-cricket-live
 cd pakistan-cricket-live
 ```
 
-### Step 2: Create Required Directories
+## Step 2: Create Required Directories
 
 ```
 mkdir templates
@@ -64,7 +64,7 @@ mkdir static
 
 Use your terminal editor (nano, vim) or paste directly:
 
-# app.py - Pakistan Cricket Live Dashboard
+### app.py - Pakistan Cricket Live Dashboard
 
 ```
 import requests
