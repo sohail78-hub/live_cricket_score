@@ -18,9 +18,7 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
 
 ## 📁 Project Structure
 
-📁 Project Structure
-
-pakistan-cricket-live/
+```Pakistan-cricket-live/
 │
 ├── app.py                  ← Main Flask application
 ├── README.md               ← This file
@@ -32,6 +30,7 @@ pakistan-cricket-live/
     ├── styles.css          ← Modern CSS styling with gradients and hover effects
     ├── default-news.png    ← Fallback image for missing news thumbnails
     └── pakistan-flag.png   ← Local flag image (to avoid external dependencies)
+```
 
 ✅ Key Files Explained
 
