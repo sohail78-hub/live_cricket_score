@@ -16,7 +16,7 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
 ✅ **Reliable Flag Display & Fallback Images**  
 ✅ **Easy Setup – Just Run One Command**
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 ```Pakistan-cricket-live/
 │
@@ -31,9 +31,6 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
     ├── default-news.png    ← Fallback image for missing news thumbnails
     └── pakistan-flag.png   ← Local flag image (to avoid external dependencies)
 ```
-
-✅ Key Files Explained
-
 
 ### ✅ Key Files Explained
 
@@ -51,15 +48,15 @@ You can create and run this project **from scratch using CLI or AI prompts like 
 
 ### Step 1: Create Project Folder
 
-```bash
-
+```
 mkdir pakistan-cricket-live
 cd pakistan-cricket-live
+```
 
 ### Step 2: Create Required Directories
 
-mkdir templates
-mkdir static
+```mkdir templates
+mkdir static```
 
 ### Step 3: Create app.py
 
