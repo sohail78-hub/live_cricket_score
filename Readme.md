@@ -18,7 +18,7 @@ A beautiful, responsive **live cricket score dashboard** focused on **Pakistan c
 
 # 🚀 How to Create it by ** GEMINI CLI **
 
-<span style="color:blue"> Put this Prompt in Gemini CLI: </span>
+<span style="color:#d35400; background-color:blue; padding:2px 6px; border-radius:4px"> Put this Prompt in Gemini CLI: </span>
 " Create a responsive Flask web application in Python that displays live international cricket scores and Pakistan-specific news. Use the ESPNcricinfo RSS feeds for live scores (https://static.cricinfo.com/rss/livescores.xml) and Pakistan news (https://www.espncricinfo.com/rss/content/story/feeds/7.xml). Filter matches to show only international games by excluding domestic teams (e.g., county sides, Police Sports Club), while prioritizing Pakistan-related content using keywords like 'Pakistan', 'PAK', 'PSL', and major player names. Parse both feeds to extract match titles, descriptions, links, and images—using <coverImages> or <media:content> for news thumbnails—and include fallbacks for missing data.
 
 Design a clean, professional UI with a header featuring the Pakistan flag, a horizontal scrollable row for live matches, and a responsive grid for news articles with images, headlines, and timestamps. Show the last updated time and auto-refresh every 3 minutes. Structure the project with app.py, templates/index.html, and static assets (styles.css, pakistan-flag.png, default-news.png), and provide clear setup instructions for running the app locally. Ensure the dashboard is visually appealing, mobile-friendly, and focused on delivering real-time, relevant cricket updates for Pakistani fans."
