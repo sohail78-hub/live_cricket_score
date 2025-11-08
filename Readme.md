@@ -373,6 +373,7 @@ Then copy-paste each file and run step-by-step.
 This app uses publicly available RSS feeds from ESPNcricinfo:
 
 https://static.cricinfo.com/rss/livescores.xml
+
 https://www.espncricinfo.com/rss/content/story/feeds/7.xml
 Data is fetched in real time. No scraping or authentication required.
 
